@@ -107,19 +107,6 @@ namespace NuevosConceptos
             }
             return false;
         }
-        public static Cliente Restar(this Cliente cliente1, Cliente cliente2)
-        {
-            if (cliente1.Cuit == cliente1.Cuit)
-            {
-                cliente1.Saldo = cliente1.Saldo - cliente2.Saldo;
-                return cliente1;
-            }
-            if (cliente1.Saldo < cliente2.Saldo)
-            {
-                return cliente1;
-            }
-            return cliente2;
-        }
         public static int Restar (this int numero1, int numero2)
         {
             return numero1 - numero2;
