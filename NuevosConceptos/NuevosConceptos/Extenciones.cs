@@ -16,14 +16,14 @@ namespace NuevosConceptos
         public static string[] CantidadPalabras(string palabra, char separador)
         {
             string[] Listapalabra = palabra.Split(' ');
-            return Listapalabra;
+            return Listapalabra; //return en una sola linea
         }
         public static double SegundosDeDiferencia(this DateTime fecha1, DateTime fecha2)
         {
             double segundos =  (fecha1 - fecha2).TotalSeconds;
             return (segundos / 60);
         }
-        public static double Promedio (this List<int> ListaEnteros)
+        public static double Promedio (this List<int> ListaEnteros) //no hace falta "Enteros" en el nombre
         {
             return ListaEnteros.Average();
         }
@@ -42,6 +42,10 @@ namespace NuevosConceptos
                     Impares.Add(num);
                 }
             }
+
+            //Se puede usar Where como expresion lambda.
+            //var sumaPares = lista.Where(x=> x%2 == 0).Sum();
+
             return (Pares.Sum() * Impares.Restar());
         }
         public static int Restar(this List<int> Enteros)
@@ -77,8 +81,8 @@ namespace NuevosConceptos
         public static string InvertirString (this string palabra)
         {
             char[] invertida = palabra.ToCharArray();
-            invertida.Reverse();
-            return invertida.ToString();
+            invertida.Reverse();//hay que asignarlo a algo.            
+            return invertida.ToString(); 
         }
         public static string UnirArray(this string[] array,char separador)
         {
