@@ -10,11 +10,11 @@ namespace NuevosConceptos
     {
         public static double CelsuisAFar (double temperatura)
         {
-            return temperatura / 2.12;
+            return temperatura / 2.12; //podria ser una constante
         }
         public static double FarACelsius (double temperatura)
         {
-            return (temperatura * 2.12);
+            return (temperatura * 2.12); //podria ser una constante
         }
     }
 }

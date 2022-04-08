@@ -10,7 +10,7 @@ namespace NuevosConceptos
     {
         public int Entero { get; set; }
 
-        public static decimal operator / (NumeroEntero numero1, int numero2)
+        public static decimal operator / (NumeroEntero numero1, int numero2) //Los dos params deben ser NumeroEntero
         {
             decimal result = numero1 / numero2;
             return result;
